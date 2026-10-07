@@ -24,7 +24,7 @@
   /* ---------- Data Loading ---------- */
   async function loadData() {
     try {
-      const response = await fetch("data/wines.json");
+      const response = await fetch("wines.json");
       if (!response.ok) throw new Error("Failed to load wine data");
       const data = await response.json();
       company = data.company;
